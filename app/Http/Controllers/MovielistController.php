@@ -16,4 +16,9 @@ class MovielistController extends Controller
     {
         return response()->json(Movielist::find($id));
     }
+
+    public function searchMovie(Request $request)
+    {
+        return response()->json(Movielist::where('title', 'like', '%' . $request->get('search') . '%')->get());
+    }
 }

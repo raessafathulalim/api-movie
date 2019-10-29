@@ -84,9 +84,9 @@ $app->middleware([
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 
-$app->register(\Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class);
+// $app->register(\Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class);
 
-$app->configure('apidoc');
+// $app->configure('apidoc');
 
 /*
 |--------------------------------------------------------------------------
